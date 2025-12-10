@@ -35,10 +35,6 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        .snow-bg {
-            background-image: url('https://www.transparenttextures.com/patterns/snow.png');
-            background-color: #1e293b; /* Slate 800 */
-        }
     </style>
 </head>
 <body class="flex justify-center items-center min-h-screen bg-gray-100 p-0 md:p-4">
@@ -123,14 +119,24 @@
             </div>
         </div>
 
-        <!-- 연락처 -->
+        <!-- 연락처 (수정됨) -->
         <div class="bg-slate-900 p-6 text-center text-slate-400 text-sm">
-            <div class="flex justify-center space-x-4 mb-2">
-                <span>회장 <strong>조남덕</strong></span>
-                <span class="border-l border-slate-700 pl-4">사무 <strong>홍성윤</strong></span>
-                <span class="border-l border-slate-700 pl-4">재무 <strong>윤희태</strong></span>
+            <div class="space-y-3">
+                <!-- 회장단 -->
+                <div class="flex justify-center items-center space-x-3 text-base">
+                    <span class="text-slate-300">이임회장 <strong>조남덕</strong></span>
+                    <span class="text-slate-700">|</span>
+                    <span class="text-yellow-400 font-bold">취임회장 박광재</span>
+                </div>
+                
+                <!-- 실무진 -->
+                <div class="flex justify-center items-center space-x-3 text-xs text-slate-500">
+                    <span>사무 <strong>홍성윤</strong></span>
+                    <span class="w-1 h-1 rounded-full bg-slate-800"></span>
+                    <span>재무 <strong>윤희태</strong></span>
+                </div>
             </div>
-            <p class="text-xs mt-4 opacity-50">이천63동문회 올림</p>
+            <p class="text-[10px] mt-6 opacity-30">이천63동문회 올림</p>
         </div>
 
         <!-- 알림 메시지 (숨김 상태) -->
